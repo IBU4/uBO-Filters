@@ -1,5 +1,7 @@
 [uBlock Origin]
 
+!#if (env_firefox && ext_ublock && cap_html_filtering)
+
 ! Strane 1p ads/tracking
 !#if false
 !#else
@@ -349,6 +351,8 @@ punkufer.dnevnik.hr##.animate.nt-allow-holder
 ||services.fandom-dev.pl/frontend-metrics/dtnr/cookie-change$xhr,domain=fandom.com
 ! Pracenje pretrage (search funkcija)
 ||cdn.jsdelivr.net/npm/search-insights$script,from=fandom.com
+!#endif
+
 !#endif
 
 !Globalna sekcija
