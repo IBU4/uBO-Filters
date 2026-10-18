@@ -1,0 +1,863 @@
+! Strane 1p ads/tracking
+!#if false
+!#else
+||telegraph.co.uk/telegraph-advertising$script,1p
+||washingtonpost.com/zeus^$script,1p
+||ny77jj.washingtonpost.com^
+||washingtonpost.com/tetro^$xhr
+||px.washingtonpost.com.cdn.cloudflare.net^$image,domain=www.washingtonpost.com
+!#endif
+
+! Glas Slavonije
+||glas-slavonije.hr/cdn/releases/glasslavonije-cms-id-
+
+! Dalmacija danas
+!#if false
+!#else
+dalmacijadanas.hr##^script[src*="/tracker.js"]
+dalmacijadanas.hr##^script[src*="/wp-content/plugins/dalmatian-dream-ad-platform/assets/js/runtime.j"]
+*$ping,domain=dalmacijadanas.hr
+dalmacijadanas.hr##^[src*="/wp-content/plugins/dalmatian-dream-post-views/js/ddpostviews-view.js"]
+www.dalmacijadanas.hr##.billboard-header.ddap2-slot--before_header.ddap2-slot
+www.dalmacijadanas.hr##.elementor-widget-shortcode.elementor-widget.elementor-element-d0306f3.elementor-element > .elementor-widget-container > .elementor-shortcode > .ddap2-slot
+www.dalmacijadanas.hr##.mj-pf-widget
+!#endif
+
+! Dnevno.hr
+!||dnevno.hr/cdn/loader.js^$script,1p
+dnevno.hr##^script[src*="/cdn/loader.js"]
+dnevno.hr##^script:has-text(/getOwnPropertyDescriptor/i):has-text(/parseInt/i):has-text(/HTMLIFrameElement/i):has-text(/padStart/i):has-text(/appendChild/i)
+
+
+! Jutarnji list filteri
+!#if false
+!#else
+jutarnji.hr##^script[src*="templates/site/js/bubblead.js"]
+jutarnji.hr##^script[src*="templates/site/js/SiA2.js"]
+jutarnji.hr##^script[src*="templates/site/js/adfooter.js"]
+jutarnji.hr##^script[src*="templates/site/js/js-bridge"]
+jutarnji.hr##^script[src*="templates/site/js/pushstream.js"]
+*$ping,domain=jutarnji.hr
+jutarnji.hr##.item_center_01_top_placeholder
+jutarnji.hr##.position_item_center_02_top.item__ad-center
+jutarnji.hr##.position_item_center_vo_top.item__ad-center
+jutarnji.hr##.position_item_center_03_top.item__ad-center
+jutarnji.hr##.position_item_center_04_top.item__ad-center
+jutarnji.hr##.position_item_center_01_top.item__ad-center
+jutarnji.hr##.position_item_center_05_top.item__ad-center
+jutarnji.hr##.ad-in-article--2.ad-in-article
+jutarnji.hr##.ad-in-article--1.ad-in-article
+jutarnji.hr##.ad-in-article--3.ad-in-article
+jutarnji.hr##.ad-in-article--4.ad-in-article
+jutarnji.hr##.ad-in-article--5.ad-in-article
+jutarnji.hr##.position_sn_nas_mb_1_top
+||jutarnji.hr/templates/site/js/adfooter.js$script,1p
+! Ostalo iz Hanza Media grupe
+!Slobodna Dalmacija
+||slobodnadalmacija.hr/templates/site/js/ads.js$script,1p
+||slobodnadalmacija.hr/templates/site/js/SiA2.js$script,1p
+||slobodnadalmacija.hr/templates/site/js/pushstream.js$script,1p
+!||slobodnadalmacija.hr^$ping,1p
+*$ping,domain=slobodnadalmacija.hr
+slobodnadalmacija.hr##.position_break_mob_01_top
+! In HTML
+jutarnji.hr##^script[src*="onnetwork.tv"]
+slobodnadalmacija.hr##^script:has-text(// upscore analytics)
+slobodnadalmacija.hr##^script:has-text("gaPrebidEvents('Pageview ALL')")
+slobodnadalmacija.hr##^script:has-text("gaPrebidEvents('Pageview with ADS')")
+slobodnadalmacija.hr##^script[hanzamedia\-adapter]
+jutarnji.hr##^script:has-text(sdk.mrf.io/statics)
+jutarnji.hr##^script:has-text(dfpLoadDemandManager)
+jutarnji.hr##^script:has-text(dfGAMId)
+jutarnji.hr##^script:has-text(DotMetricsObj)
+jutarnji.hr##^script:has-text(dfpPublishedDate)
+jutarnji.hr##^script:has-text(getOnNetworkTV)
+jutarnji.hr##^script:has-text(initUpScore)
+jutarnji.hr##^script:has-text(GTM-5GCRM7)
+jutarnji.hr##^script:has-text(M4976KJ6R9)
+! Gloria
+www.gloria.hr##.ad-in-article--1.ad-in-article
+www.gloria.hr##.ad-in-article--2.ad-in-article
+www.gloria.hr##.ad-in-article--vo.ad-in-article
+www.gloria.hr##.ad-in-article--3.ad-in-article
+||gloria.hr/templates/site/js/adfooter.js$script,1p
+||gloria.hr/templates/site/js/SiA2.js$script,1p
+*$ping,domain=gloria.hr
+! Gloria Ad-Shield
+gloria.hr##^script[data-sdk^="wp-ls/"]
+!#endif
+
+
+! Net HR Filteri
+!#if false
+!#else
+net.hr##^script[src*="/static/required/js/se_ads.js"]
+net.hr##^script[src*="/static_dev/js/se_ads_conf.js"]
+!net.hr##^script[src*="/static/required/js/swiper/swiper-bundle.min.js"]
+net.hr##^script:has-text(files.upscore.com/async/upScore.js)
+net.hr##^script:has-text(rackcdn.com)
+net.hr##^script:has-text(/themes/nethr/js/swipers.js)
+net.hr##div[class*="slider--"]
+*$ping,domain=net.hr
+net.hr##.se-mobilead--2.se-mobilead
+net.hr##.se-mobilead--0.se-mobilead
+net.hr##.se-mobilead--1.se-mobilead
+net.hr##.se-article--gallery-ads_3.se-article--gallery-ads
+!Dubrovački Dnevnik
+||dubrovackidnevnik.net.hr/js/dd_adsManager_v2.js$script,1p
+||dubrovackidnevnik.net.hr/js/dotmetrics.js$script,1p
+!#endif
+
+! Vrijeme&Radar
+www.vrijemeradar.hr##wo-async-placeholder.loaded > .placeholder
+||www.vrijemeradar.hr/%5Eassets/ad/ad-placeholder.svg$image
+www.vrijemeradar.hr##wo-weather > .loaded > wo-ad
+
+! Klik HR
+klik.hr###banner_300x250_1
+klik.hr###banner_300x250_2
+klik.hr###banner_300x250_3
+klik.hr###banner_300x250_4
+klik.hr###banner_300x250_5
+klik.hr###banner_300x250_6
+klik.hr###banner_300x250_7
+klik.hr##.banner-wrapper-threebox.show_on_mobile.container
+klik.hr##^script[midas\-phrygia]
+*$ping,domain=klik.hr
+
+!Vecernji list
+!#if false
+!#else
+vecernji.hr##^script[src*="static/vlredesign/js/linker-vignette"]
+vecernji.hr##^script[src*="analytics/track.js"]
+! Lomi vecernji tv self hosted video, traži onnetwork.tv (noscript). Self hosted video je rijetko koristan, večernji objavljuje na YT i linka widget.
+!||vecernji.hr/static/vlredesign/js/ads.min.js$script,1p
+vecernji.hr##^script[src*="static/vlredesign/js/modules/ad_slots.min.js"]
+vecernji.hr##^script:has-text(googletag.enableServices)
+vecernji.hr##^script:has-text(rackcdn.com)
+vecernji.hr##^script:has-text(defractal_sp)
+*$ping,domain=vecernji.hr
+!#endif
+
+!24Sata
+!#if false
+!#else
+! MIDAS User ID
+24sata.hr##^script[src*="cdn.midas-network.com/Common/GetUserIdAsync/"]
+! MIDAS Tracking Pixel
+24sata.hr##^img[src*="cdn.midas-network.com/MidasPixel/IndexAsync/"]
+24sata.hr##^script:has-text(www.npttech.com/advertising.js)
+! 24sata.hr – upScore config
+24sata.hr##^script[src*="hl.upscore.com/config/24sata.hr.js"]
+! upScore – inline tracking
+24sata.hr##^script:has-text(window.sendUpscoreData)
+! upScore – dynamic JS loader
+24sata.hr##^script:has-text(files.upscore.com/async/upScore.js)
+! upScore – force disabled
+24sata.hr##+js(set, isUpscoreScriptEnabled, false)
+! 24sata.hr – The News Box / upScore Recommender
+24sata.hr##^script:has-text(cdn.thenewsbox.net/js/main.js)
+! 24sata.hr – Piano marketing event tracking
+24sata.hr##+js(set, sendPianoTrackingEvent, noopFunc)
+24sata.hr##^script[src*="/static/scripts/dfp/dfp.min.js"]
+24sata.hr##^script[src*="/static/scripts/article/midas.min.js"]
+24sata.hr##^script[src*="/static/scripts/utils/tracking.min.js"]
+24sata.hr##^script[src*="/static/scripts/upscore/upscore.min.js"]
+24sata.hr##^script[src*="/analytics/track.js"]
+24sata.hr##^[src*="/static/scripts/article/midas.min.js"]
+*$ping,domain=24sata.hr
+!#endif
+
+!Index.hr Case study - agresivni ad-tech i njegovo uklanjanje.
+!#if false
+!#else
+! Ad-Tech loading
+||index.hr/bundles/apetite.js$script,1p
+index.hr##^script[src*="edge.permutive.app"]
+index.hr##^script:has-text(isContentPersonalized)
+index.hr##^script:has-text(requestManager)
+index.hr##^iframe[src*="u.openx.net"]
+index.hr##^link[rel="preload"][href*="micro.rubiconproject.com"]
+index.hr##^link[rel="preload"][href*="pagead2.googlesyndication.com"]
+index.hr##^link[rel="preload"][href*="securepubads.g.doubleclick.net"]
+index.hr##^link[rel="preload"][href*="c.amazon-adsystem.com"]
+index.hr##^link[rel="preconnect"][href*="securepubads.g.doubleclick.net"]
+index.hr##^link[rel="preconnect"][href*="c.amazon-adsystem.com"]
+index.hr##^script[src*="clarity.ms"]
+index.hr##^script:has-text(w907t4ir3l)
+index.hr##^script:has-text(safeframe.googlesyndication.com)
+index.hr##^script:has-text(cdn.taboola.com)
+index.hr##^script:has-text(DotMetricsObj)
+index.hr##^script[src*="ad.doubleclick.net"]
+index.hr##^script[src*="static.cloudflareinsights.com"]
+index.hr##^script:has-text(connect.facebook.net/en_US/fbevents.js)
+index.hr##^script[src*="connect.facebook.net/hr_HR/sdk.js"]
+index.hr##^script[src*="googletagmanager.com"]
+index.hr##^[src*="freshatl.azurewebsites.net/js/fresh-atl.js"]
+index.hr##^noscript:has-text(facebook.com/tr)
+index.hr##^img[src*="facebook.com/tr"][src*="noscript=1"]
+index.hr##^script[src*="apetite.index.hr/bundles/apetite.js"]
+index.hr##^div.js-carousel-campaign[data-count-impression="true"]
+index.hr##^script:has-text(accountService.GetUserPPID)
+||interactive.index.hr^$removeparam=cExU,domain=index.hr
+index.hr##^script:has-text(amazonAdSlots)
+index.hr##^script:has-text(googletag.pubads)
+index.hr##^script:has-text(alternate-title)
+www.index.hr##^div[class="js-midas-widget midas-container"]
+index.hr##^script[src*="/Scripts/adblockDetect/ads.js"]
+index.hr##^script:has-text(indexCanRunAds)
+index.hr##^script:has-text(AnalyticsPetite)
+www.index.hr##^script:has-text(articleAudienceTerms)
+!Mobile ads slots
+www.index.hr##^div[class="js-slot-container"][data-has-close-btn="true"]
+www.index.hr##^div[id="M_OUP"]
+www.index.hr##^div[id="M_header"][class="js-slot-container"]
+www.index.hr##^div[id="MA1"][class="js-slot-container reserve-height"]
+www.index.hr##^div[id="MAP"][class="js-slot-container"]
+www.index.hr##^div[class="js-slot-container"][data-css-class="dfp-mobile-in-article padding-top border-top padding-bottom border-bottom main-border"][data-disclaimer="true"]
+www.index.hr##^div[id="MBA1"][class="js-slot-container"]
+www.index.hr##^div[class="js-slot-container"][data-css-class="google-box padding-bottom"]
+!Desktop ads slots
+www.index.hr##^div[id="DB1"][class="js-slot-container"]
+www.index.hr##^div[id="D_OUP"]
+www.index.hr##^div[id="D_OUP_wallpaper"]
+www.index.hr##^div[class="js-slot-container"][data-css-class="dfp-inarticle"]
+www.index.hr##^div[class="js-slot-container reserve-height-with-disclaimer"][data-css-class="dfp-inarticle"][data-disclaimer="true"][data-css-remove-after-render="reserve-height-with-disclaimer"]
+www.index.hr##^div[class="js-slot-container"][data-css-class="google-box margin-top-20 top-padding border-top"]
+www.index.hr##^div[id="Box1"][class="js-slot-container"]
+www.index.hr##^div[id="Box2"][class="js-slot-container"]
+www.index.hr##^div[id="DA3"]
+www.index.hr##^div[class="js-slot-container"][data-css-class="main-container google-box margin-bottom-50 padding-bottom"]
+!Anti-adblock defuse
+index.hr##+js(set, indexCanRunAds, true)
+! Index.hr - backup telemetry transport
+*$ping,domain=index.hr
+||index.hr/api/embed/stats*$xhr,1p
+||index.hr/Scripts/Embed/Services/carouselService.js$script,1p
+! Index.hr carousel
+||index.hr/embed/carousel/*$subdocument,1p
+!index.hr##.js-carousel-campaign:remove()
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/(CountArticleView:function\([^)]*\)\{|CountArticleTitleView:function\([^)]*\)\{|CountArticlePhotoView:function\([^)]*\)\{|articleTimeOnPageService=function\(\)\{var e=\{Init:function\([^)]*\)\{|e\.TrackIfNeeded=function\(\)\{|e\.InitTracking=function\([^)]*\)\{|midasService=function\(\)\{var e=\{\};return e\.InitializeMidas=function\(\)\{)/\$&return;/g
+! Homepage impression/click tracker - /api/homepage/seen + IndexedDB history
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/void 0!==homepageImpressionService&&homepageImpressionService\.Init\(\)/void 0/g
+! GA4 event producer
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/gtag\(/void(/g
+! DotMetrics Ajax pageviews
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/dm\.AjaxEvent\(/void(/g
+! Permutive - preserve Promise-return contract, but do nothing
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/(e\.TriggerAllIfAllowed=function\([^)]*\)\{)/\$&return Promise.resolve();/g
+! FingerprintJS2 - preserve .then() callers, return empty fingerprint
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/(browserFingerprintService=function\(\)\{var e=\{getFingerprint:function\(\)\{)/\$&return Promise.resolve("");/g
+! Carousel impression/viewable-impression 1P telemetry
+||index.hr/Scripts/mobile-bundle.min.js$script,1p,replace=/[$]\.post\("\/api\/Stats\/carousel\/count-up-(?:viewable-)?impression\/"\+[A-Za-z_$][\w$]*,function\(\)\{\}\)/void 0/g
+! INDEX.HR desktop bundle - isti rezovi kao mobile
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/(CountArticleView:function\([^)]*\)\{|CountArticleTitleView:function\([^)]*\)\{|CountArticlePhotoView:function\([^)]*\)\{|articleTimeOnPageService=function\(\)\{var e=\{Init:function\([^)]*\)\{|e\.TrackIfNeeded=function\(\)\{|e\.InitTracking=function\([^)]*\)\{|midasService=function\(\)\{var e=\{\};return e\.InitializeMidas=function\(\)\{)/\$&return;/g
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/void 0!==homepageImpressionService&&homepageImpressionService\.Init\(\)/void 0/g
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/gtag\(/void(/g
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/dm\.AjaxEvent\(/void(/g
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/(browserFingerprintService=function\(\)\{var e=\{getFingerprint:function\(\)\{)/\$&return Promise.resolve("");/g
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/(e\.TriggerAllIfAllowed=function\([^)]*\)\{)/\$&return Promise.resolve();/g
+||index.hr/Scripts/desktop-bundle.min.js$script,1p,replace=/[$]\.post\("\/api\/Stats\/carousel\/count-up-(?:viewable-)?impression\/"\+[A-Za-z_$][\w$]*,function\(\)\{\}\)/void 0/g
+!Meta tracking Index.hr
+||connect.facebook.net/hr_HR/sdk.js$script,domain=index.hr
+||connect.facebook.net/en_US/fbevents.js$script,domain=index.hr
+||connect.facebook.net/hr_HR/bundle/sdk.js$script,domain=index.hr
+!Cookie UUID zaustvlja novi cookie ali ne spriječava čitanje iz postojećeg
+||www.index.hr^$document,replace=/document\.cookie\s*=\s*'d_id='\s*\+\s*window\.d_id\s*\+\s*'; path=\/; max-age='\s*\+\s*maxAgeSeconds\s*\+\s*'; SameSite=Lax; Secure'/void 0/g
+! Easy list, lomi video
+!index.hr#@#.ad-unit-text
+!index.hr#@#.js-slot-container
+!#endif
+
+! Dnevnik HR Case study - minificirani main bundle kao loader
+!#if false
+!#else
+! Firebase Messaging + Firebase Analytics bundle
+||dnevnik.hr/prod/fcm.bundle.js$script,1p
+!Estetski filteri
+punkufer.dnevnik.hr##.inside-1.banner-holder
+punkufer.dnevnik.hr##.inside-2.banner-holder
+punkufer.dnevnik.hr##.animate.nt-allow-holder
+! Backup telemetry transport
+! Bilo koji ping / sendBeacon pokrenut sa dnevnik.hr
+*$ping,domain=dnevnik.hr
+! Audience loader:
+! DotMetrics + UpScore + Facebook Pixel
+/(?:dnevnik2023|gol|novatv)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/n\(4352\)/void 0/g
+! ContentExchange analytics/tracker + Linker
+/(?:dnevnik2023|gol)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/n\(5824\)/void 0/g
+! Ad-tech bootstrap Kill module 5600: GPT + Rubicon/Magnite + FreshATL/OneTag/Yieldlove/AdPushup/GTM path. Preserve canRunAds=true separately because it may double as adblock/ad-shield state/bait. ntappinit is generated manually so normal site initialization does not depend on the killed ad stack.
+/(?:dnevnik2023|gol)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/n\(5600\)/window.postMessage({ntappinit:!0}\,"*")/g
+! GTM / analytics event producer Kill GTM event producer in iframe and normal page: parent.postMessage({gtm_event:...}) window.dataLayer.push(...)
+/(?:dnevnik2023|gol)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/(parent\.postMessage\(\{gtm_event:\{category:t\,action:e\,label:n\}\}\,i\)|window\.dataLayer\.push\(o\))/void 0/g
+! Meta / Facebook analytics Keep Facebook SDK/XFBML functionality, but suppress Facebook AppEvents pageview telemetry
+/(?:dnevnik2023|gol)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/FB\.AppEvents\.logPageView\(\)/void 0/g
+! Internal traffic tracking Prevent itm_source / itm_medium / itm_campaign tagging while preserving all callers/navigation
+/(?:dnevnik2023|gol)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/(window\.tagInternalTraffic=function\(e\,t\,n\,o\)\{)/\$&return;/g
+! Gemius Video remains functional; suppress explicit Gemius hit
+/(?:dnevnik2023|gol)\.bundle\.js/$script,1p,domain=dnevnik.hr,replace=/pp_gemius_hit\(n\)/void 0/g
+!#endif
+
+! HRT
+!#if false
+!#else
+! HRT: DotMetrics + Gemius inline bootstrap
+||hrt.hr/_next/static/chunks/$script,1p,replace=/document\.body\.append\(e\)/void 0/g
+! HRT: GTM bootstrap
+||hrt.hr/_next/static/chunks/$script,1p,replace=/!document\.querySelector\("#gtmScript"\)/false/g
+! Google adsense, wtg-ads, upscore
+||hrt.hr/_next/static/chunks/$script,1p,replace=/ut\("script"\,\{[^{}]*src:"https:\/\/(?:pagead2\.googlesyndication\.com|hl\.upscore\.com|lib\.wtg-ads\.com)\/[^"]*"[^{}]*\}\)/null/g
+! Upscore drugi loader
+||hrt.hr/_next/static/chunks/$script,1p,replace=/e\.id="upscore"\,e\.src="\/\/files\.upscore\.com\/async\/upScore\.js"\,e\.async=!0,document\.body\.append\(e\)/void 0/g
+!constent.hr pixel sa slanjem podataka.
+||delivery.consent.hr/delivery/info/$image,domain=vijesti.hrt.hr
+*$ping,domain=hrt.hr
+!#endif
+
+! Fandom - case study - napredni 1p tracking
+!#if false
+!#else
+! Fetch block je backup kada pomoćna komponenta pokrene tracking filteri se aktiviraju
+||fandom.com/adeng*$xhr
+!||fandom.com/f2/assets/tracking$script - OK za rad bez logina, za login je uvjet i odrađiva ga replace sekcija
+!||fandom.com/f2/assets/useSilverSurferQuery-*.js$script Ista napomena kao za tracking.
+||fandom.com/icbm*$xhr
+||fandom.com/geoip*$xhr
+||fandom.com/icbm/api/loader$script
+! Samo za login, bez logina ne treba.
+! Fandom tracking module - neutralize Fandom Data Warehouse transport
+||fandom.com/f2/assets/tracking-*.js$script,replace=/([A-Za-z_][A-Za-z0-9_]*)\.get\(\{url:[A-Za-z_][A-Za-z0-9_]*\,headers:null\}\)/\$1.Deferred().resolve().promise()/g
+! Fandom tracking module - neutralize direct performance beacon/fetch transport
+||fandom.com/f2/assets/tracking-*.js$script,replace=/navigator\.sendBeacon\?navigator\.sendBeacon\([A-Za-z_][A-Za-z0-9_]*\):fetch\([A-Za-z_][A-Za-z0-9_]*\,\{method:"POST"\,keepalive:!0\,credentials:"omit"\,mode:"no-cors"\}\)/void 0/g
+! Fandom tracking module - suppress internal page_view queue
+||fandom.com/f2/assets/tracking-*.js$script,replace=/[A-Za-z_][A-Za-z0-9_]*\(\)\.q\.push\(\{event:"page_view"\,payload:\{\}\}\)/void 0/g
+! Fandom SilverSurfer - disable SDK readiness probe
+||fandom.com/f2/assets/useSilverSurferQuery-*.js$script,replace=/window\?\.SilverSurferSDK\?\.isReady\(\)/true/g
+! Fandom SilverSurfer - return empty history context
+||fandom.com/f2/assets/useSilverSurferQuery-*.js$script,replace=/window\?\.SilverSurferSDK\?\.getContext\(\)/{pages:[]}/g
+! Fandom / nocookie.net - block all scripts. Za rad bez logina, stavi default u NoScript - ne radi video
+||nocookie.net^$script,domain=fandom.com
+! Fandom - allow only Morpheus video engine
+@@||nocookie.net/fandom-ae-assets/morpheus/video-engine/prod/*$script,domain=fandom.com
+@@||nocookie.net/utility-framework/*$script,domain=fandom.com
+! Load.php fail safe tracking loading
+||fandom.com/load.php$script,1p,replace=/i=!!r\.sendToDW/i=!1/g
+||fandom.com/load.php$script,1p,replace=/a=r\.pushToDataLayer===void 0\|\|r\.pushToDataLayer/a=!1/g
+||services.fandom.com/frontend-metrics/dtnr/cookie-change$xhr,domain=fandom.com
+||services.fandom-dev.pl/frontend-metrics/dtnr/cookie-change$xhr,domain=fandom.com
+! Pracenje pretrage (search funkcija)
+||cdn.jsdelivr.net/npm/search-insights$script,from=fandom.com
+!#endif
+
+!Globalna sekcija
+!-----------------------------------------
+!#if (env_firefox && ext_ublock && cap_html_filtering)
+!#if false
+! else za omogućiti globalnu sekciju
+!#else
+!Anti-AdBlock
+!#if false
+!#else
+!Ad-Shield
+! Heuristika
+! Primjer - mora početi sa !function()  izuzima ukoliko počinje sa mogućim funkcionalnim kodom prije. Isto tako mora završiti sa }() radi mogućeg funkcionalnog koda iza.
+*##^script:has-text(/^\s*!function\(\)/):has-text(/\}\(\);\s*$/):has-text(__sa_):has-text(as_essential):has-text(HTMLIFrameElement_contentWindow):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!LAN/localhost injection point primjer za ubacivanje vlastitog JS za veće izmjene.
+!*$script,replace=/html\-load\.cc/127.0.0.1/g
+! html-load.cc
+||html-load.cc^$script,redirect=noop.js
+*##^script[src*="html-load.cc"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="html-load.cc"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! html-load.com
+||html-load.com^$script,redirect=noop.js
+*##^script[src*="html-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="html-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! content-loader.com
+||content-loader.com^$script,redirect=noop.js
+*##^script[src*="content-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="content-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! css-load.com
+||css-load.com^$script,redirect=noop.js
+*##^script[src*="css-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="css-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! img-load.com
+||img-load.com^$script,redirect=noop.js
+*##^script[src*="img-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="img-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! fs-loader.com
+||fs-loader.com^$script,redirect=noop.js
+*##^script[src*="fs-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="fs-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! colourpike.com
+||colourpike.com^$script,redirect=noop.js
+*##^script[src*="colourpike.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="colourpike.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!Blackthrough
+!pagefair.com
+*##^script[src*="pagefair.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="pagefair.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/pagefair\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/pagefair\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!pagefair.net
+*##^script[src*="pagefair.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="pagefair.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/pagefair\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/pagefair\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!btloader
+*##^script[src*="btloader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="btloader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/btloader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/btloader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!blockmetrics.com
+*##^script[src*="blockmetrics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="blockmetrics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/blockmetrics\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/blockmetrics\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!#endif
+
+!Anti-Fingerprint - detektira 1p primitivne fingerprint skripte i onemogućuje pokretanje
+!#if false
+!#else
+*,~amiunique.org##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~js.stripe.com##^script[src*="fingerprint"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! Primjer neutralizacije fingerprinta adblock ekstenzije
+!@@||browserleaks.com^$generichide
+!@@*$image,domain=browserleaks.com
+!@@*$removeparam,domain=browserleaks.com
+!#endif
+
+! Google tag manager 1p
+!#if false
+!#else
+!Stape only. izaziva syntax error i prekida pokretanje. Stape je 1p proxy za ad-tech
+*$script,replace=/(?:!function\(\)\{(?=[\s\S]{0\,650}RESOURCE_DOMAIN)(?=[\s\S]{0\,650}TRACKING_DOMAIN)(?=[\s\S]{0\,650}NGINX_REQUEST_PATH_SUFFIX)(?=[\s\S]{0\,650}CORE_API_REQUEST_PATH_SUFFIX)|!function\(\)\{(?=[\s\S]{0\,7000}window\._xsd)(?=[\s\S]{0\,7000}adblockState)(?=[\s\S]{0\,7000}x-gtm-as)(?=[\s\S]{0\,7000}HTMLScriptElement\.prototype))/@/g
+! Ubaciva zamijensku skriptu za google servise
+!*##+js(google-ima) !imasdk.googleapis.com
+##+js(googletagservices_gpt)
+*,~croatiaairlines.com##^script:has-text(/gtm\.js/i):has-text(/gtm\.start/i):has-text(/dataLayer/i):not(script[type*="json"i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^script:has-text(/gtm\.min\.js/i):has-text(/gtm\.start/i):has-text(/dataLayer/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/googletagmanager\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/googletagmanager\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^iframe[src*="googletagmanager.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^noscript:has(iframe[src*="googletagmanager.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="googletagmanager.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gtm.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gtm.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/googletagservices\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/googletagservices\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="googletagservices.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="googletagservices.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="googletagservices.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="dfp.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="dfp.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!$replace=/(?:[A-Za-z0-9-]+\.)*googletagmanager\.com/127.0.0.1/g
+!$replace=/(?:[A-Za-z0-9-]+\.)*googletagservices\.com/127.0.0.1/g
+!#endif
+
+! Google Analytics 1p
+!#if false
+!#else
+*##+js(google-analytics_analytics)
+*##+js(google-analytics_ga)
+*##^script:has-text(/createElement/i):has-text(/google\-analytics\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/google\-analytics\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="google-analytics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="google-analytics.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="google-analytics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*google-analytics\.com/127.0.0.1/g
+!#endif
+
+! Google Syndication 1p
+!#if false
+!#else
+*##+js(googlesyndication_adsbygoogle)
+*,~googleapis.com##^script:has-text(/createElement/i):has-text(/googlesyndication\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~googleapis.com##^script:has-text(/createElement/i):has-text(/googlesyndication\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="googlesyndication.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="googlesyndication.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="googlesyndication.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*googlesyndication\.com/127.0.0.1/g
+!#endif
+
+! Doubleclick.net 1p
+!#if false
+!#else
+*##+js(doubleclick_instream_ad_status)
+*,~googleapis.com,~onnetwork.tv##^script:has-text(/createElement/i):has-text(/doubleclick\.net/i):has-text(/appendChild/i):not(:has-text(/didomionready/i)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~googleapis.com,~onnetwork.tv##^script:has-text(/createElement/i):has-text(/doubleclick\.net/i):has-text(/insertBefore/i):not(:has-text(/didomionready/i)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="doubleclick.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="doubleclick.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~direktno.hr##^script[src*="doubleclick.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ad_status.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ad_status.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~direktno.hr##^script[src*="gpt.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gpt.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*doubleclick\.net/127.0.0.1/g
+!#endif
+
+! Dotmetrics 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="dotmetrics.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="dotmetrics.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="dotmetrics.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*dotmetrics\.net/127.0.0.1/g
+!#endif
+
+! Microsoft 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="clarity.ms"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="clarity.ms"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="clarity.ms"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?clarity\.ms/127.0.0.1/g
+!#endif
+
+! Cloudflare Insights 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="cloudflareinsights.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*cloudflareinsights\.com/127.0.0.1/g
+!#endif
+
+! Meta Pixel
+!#if false
+!#else
+*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/fbevents\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/fbevents\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="connect.facebook.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="connect.facebook.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="connect.facebook.net"][src*="/fbevents.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="connect.facebook.net"][src*="/all.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!#endif
+
+! Chartbeat 1p diže se zajedno sa loginom, menijem i videom = lomi stranicu
+!#if false
+!#else
+!*,~edition.cnn.com,~direktno.hr##^script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/appendChild/i)
+!*,~edition.cnn.com,~direktno.hr##^script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/insertBefore/i)
+!*##^iframe[src*="chartbeat.com"]
+*##^noscript:has(iframe[src*="chartbeat.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^script[src*="chartbeat.com"]
+!*$replace=/(?:[A-Za-z0-9-]+\.)*chartbeat\.com/127.0.0.1/g
+!#endif
+
+! Gemius 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="gemius.pl"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*gemius\.pl/127.0.0.1/g
+!#endif
+
+! Linker.hr 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?linker\.hr/127.0.0.1/g
+*##^noscript:has(iframe[src*="linker.hr"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!#endif
+
+! Tealium iQ 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="tags.tiqcdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="tags.tiqcdn.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="tags.tiqcdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="utag.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="utag.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*tiqcdn\.com/127.0.0.1/g
+!#endif
+
+! Amazon Advertising / APS 1p
+! Amazon Ads – early surrogate
+!#if false
+!#else
+*##+js(amazon_ads)
+*,~imdb.com##^script:has-text(/createElement/i):has-text(/amazon\-adsystem\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~imdb.com##^script:has-text(/createElement/i):has-text(/amazon\-adsystem\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="amazon-adsystem.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="amazon-adsystem.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="amazon-adsystem.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="apstag.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="apstag.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*amazon\-adsystem\.com/127.0.0.1/g
+!#endif
+
+! Adobe DTM / Adobe Launch 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="assets.adobedtm.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="assets.adobedtm.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="assets.adobedtm.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="satelliteLib-"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="launch-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="launch-"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*assets\.adobedtm\.com/127.0.0.1/g
+!#endif
+
+! Amplitude 1p
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="cdn.amplitude.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="analytcs-browser-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="analytics-browser"][src*="-min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ampli.v"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ampli.v"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?cdn\.amplitude\.com/127.0.0.1/g
+!#endif
+
+! Hotjar
+!#if false
+!#else
+!*##^script:has-text(/hotjar\.com/i)
+*##^script:has-text(/createElement/i):has-text(/hotjar\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/hotjar\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="hotjar.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="hotjar.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="hotjar.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="hotjar-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="hotjar-"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?hotjar\.com/127.0.0.1/g
+!#endif
+
+! New Relic
+!#if false
+!#else
+!*##^script:has-text(/newrelic\.com/i)
+*##^script:has-text(/createElement/i):has-text(/newrelic\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/newrelic\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="newrelic.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="newrelic.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="newrelic.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="nr-spa-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="nr-spa-"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?newrelic\.com/127.0.0.1/g
+!#endif
+
+! Criteo
+!#if false
+!#else
+! criteo.com
+!*##^script:has-text(/criteo\.com/i)
+*##^script:has-text(/createElement/i):has-text(/criteo\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/criteo\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="criteo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="criteo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="criteo.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?criteo\.com/127.0.0.1/g
+! criteo.net
+!*##^script:has-text(/criteo\.net/i)
+*##^script:has-text(/createElement/i):has-text(/criteo\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/criteo\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="criteo.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="criteo.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="criteo.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:www\.)?criteo\.net/127.0.0.1/g
+!#endif
+
+! Marfeel
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/mrf\.io/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/mrf\.io/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="mrf.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="mrf.io"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="mrf.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="marfeel-sdk"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="marfeel-sdk"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*$replace=/(?:[A-Za-z0-9-]+\.)*mrf\.io/127.0.0.1/g
+!#endif
+
+! Midas
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="midas-network.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="midas-network.com"])
+*##^script[src*="midas-network.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="midas"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="midas"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!#endif
+
+! 234doo
+!#if false
+!#else
+*##^script:has-text(/createElement/i):has-text(/234doo\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/234doo\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="234doo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="234doo.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="234doo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!#endif
+
+! Cesti nacin pozivanja uz nisku vjerovatnost loma stranice ali vecu vjerovatnost izvrsenja drugim putem, vidi listu iznad za detalje.
+!#if false
+!#else
+*##^script[src*="openx.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="permutive.app"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="rubiconproject.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="richaudience.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="thenewsbox.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="upscore.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="contentexchange.me"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="contentsquare.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="pahtzc.tech"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="pahtsx.tech"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="pushpushgo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="smartocto.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="npttech.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ezojs.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="performax.cz"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="permutive.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="speedcurve.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="anonymised.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="imrworldwide.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="appsflyer.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="demdex.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="realtimely.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="abtasty.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="mxpnl.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="go-mpulse.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="defractal.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="marktjagd.de"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="styria.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="thecrossnet.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="wtg-ads.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="krakenoptimize.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="klaviyo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="kindhearthub.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="webcontentassessor.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="appboycdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="taboola.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="conde.digital"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="dianomi.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ntv.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="parsely.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="wknd.ai"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="sail-horizon.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="tru.am"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="pub.network"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="cxense.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="edigitalsurvey.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="crwdcntrl.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="geoedge.be"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="trueanthem.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="useinsider.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adsafeprotected.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="googleadservices.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="tvsquared.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="tvpixel.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="media.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="3gl.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ml314.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="dv.tech"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adxbid.info"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adthrive.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ads-twitter.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="optmn.cloud"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adnxs.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="pubmatic.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="casalemedia.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="contextweb.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="indexww.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="smartadserver.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adform.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="teads.tv"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="3lift.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="bidswitch.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="sharethrough.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="lijit.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="sonobi.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="smaato.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="smaato.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="yieldmo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="yieldlab.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="quantserve.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="bluekai.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="tapad.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="mathtag.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="flashtalking.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="serving-sys.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adsrvr.org"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="rlcdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="id5-sync.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="id5.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="ogury.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="33across.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gumgum.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="trustx.org"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="districtm.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="revcontent.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="mgid.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adroll.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="nextroll.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="simpli.fi"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="w55c.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="everesttech.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="yieldmanager.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="spotxchange.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="mookie1.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="exelator.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="sentinelpro.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="branch.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="fastly-insights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="adskeeper.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="onesignal.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="insurads.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!#endif
+
+! Globalni 127.0.0.1 sink
+! else za omogućiti replace blok
+!#if false
+!!#else
+! localhost cleaner
+*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^iframe[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^noscript:has(iframe[src*="127.0.0.1"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+! rename trackers to localhost
+||*$replace=/(?:[A-Za-z0-9-]+\.)*(?:googletagmanager\.com|googletagservices\.com|google-analytics\.com|googlesyndication\.com|doubleclick\.net|dotmetrics\.net|cloudflareinsights\.com|gemius\.pl|tiqcdn\.com|assets\.adobedtm\.com|mrf\.io|upscore\.com|permutive\.app|midas-network\.com|permutive\.com|taboola\.com|googleadservices\.com|linker\.hr|clarity\.ms|criteo\.net|criteo\.com|amazon-adsystem\.com|rubiconproject\.com|npttech\.com|rackcdn\.com|mc\.yandex\.ru|mc\.yandex\.com|pubmatic\.com|2mdn\.net|brid\.tv)/127.0.0.1/g
+!#endif
+
+!#endif
+!#endif
