@@ -1,3 +1,5 @@
+[uBlock Origin]
+
 ! Strane 1p ads/tracking
 !#if false
 !#else
