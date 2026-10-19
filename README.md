@@ -1,7 +1,8 @@
 # uBO-Filters
 
-Personal uBlock Origin filters for Firefox only.
+This filter list is provided strictly AS IS, without any warranty, maintenance commitment, or obligation to provide technical support.
 
+Personal uBlock Origin filters for Firefox only.
 Published for personal synchronization and reference. Not intended for third-party use or public distribution.
 
 No support or compatibility guarantees are provided. Use at your own risk.
