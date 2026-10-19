@@ -8,9 +8,9 @@ No support or compatibility guarantees are provided. Use at your own risk.
 
 # How These Filters Work
 
-These filters target ad-tech at its execution points rather than relying solely on network blocking.
+These filters target trackicng components at its execution points rather than relying solely on network blocking.
 
-Using uBlock Origin's HTML filtering, they remove matching tracking, fingerprinting, advertising, and anti-adblock components before the browser parses them.
+Using uBlock Origin's HTML filtering, they remove matching tracking, fingerprinting, and anti-adblock components before the browser parses them. Although ads are not the target of this list, they may also be removed when bundled with tracking components.
 
 Importantly, HTML filtering does not prevent subsequent dynamic loading or execution through other code paths. This intentional limitation helps preserve website functionality.
 
