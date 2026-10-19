@@ -101,7 +101,7 @@
 !#if false
 !#else
 !Stape only. izaziva syntax error i prekida pokretanje. Stape je 1p proxy za ad-tech
-*$script,replace=/(?:!function\(\)\{(?=[\s\S]{0\,650}RESOURCE_DOMAIN)(?=[\s\S]{0\,650}TRACKING_DOMAIN)(?=[\s\S]{0\,650}NGINX_REQUEST_PATH_SUFFIX)(?=[\s\S]{0\,650}CORE_API_REQUEST_PATH_SUFFIX)|!function\(\)\{(?=[\s\S]{0\,7000}window\._xsd)(?=[\s\S]{0\,7000}adblockState)(?=[\s\S]{0\,7000}x-gtm-as)(?=[\s\S]{0\,7000}HTMLScriptElement\.prototype))/@/g
+!*$script,replace=/(?:!function\(\)\{(?=[\s\S]{0\,650}RESOURCE_DOMAIN)(?=[\s\S]{0\,650}TRACKING_DOMAIN)(?=[\s\S]{0\,650}NGINX_REQUEST_PATH_SUFFIX)(?=[\s\S]{0\,650}CORE_API_REQUEST_PATH_SUFFIX)|!function\(\)\{(?=[\s\S]{0\,7000}window\._xsd)(?=[\s\S]{0\,7000}adblockState)(?=[\s\S]{0\,7000}x-gtm-as)(?=[\s\S]{0\,7000}HTMLScriptElement\.prototype))/@/g
 ! Ubaciva zamijensku skriptu za google servise
 !*##+js(google-ima) !imasdk.googleapis.com
 ##+js(googletagservices_gpt)
