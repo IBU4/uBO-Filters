@@ -1,6 +1,9 @@
 [uBlock Origin]
 ! Title: Osobni globalni filteri
 !
+!Personal uBlock Origin filters. Global generic filters for Firefox with uBlock Origin, only.
+!Not itended for public usage. No support will be provided. If you ended reading this page use is at your own resposinbility.
+!
 !Globalna sekcija
 !-----------------------------------------
 !#if (env_firefox && ext_ublock && cap_html_filtering)
