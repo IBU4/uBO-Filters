@@ -506,13 +506,13 @@
 !#if false
 !!#else
 ! localhost cleaner
-*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^iframe[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^noscript:has(iframe[src*="127.0.0.1"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^iframe[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^noscript:has(iframe[src*="127.0.0.1"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^script[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! rename trackers to localhost
-||*$replace=/(?:[A-Za-z0-9-]+\.)*(?:googletagmanager\.com|googletagservices\.com|google-analytics\.com|googlesyndication\.com|doubleclick\.net|dotmetrics\.net|cloudflareinsights\.com|gemius\.pl|tiqcdn\.com|assets\.adobedtm\.com|mrf\.io|upscore\.com|permutive\.app|midas-network\.com|permutive\.com|taboola\.com|googleadservices\.com|linker\.hr|clarity\.ms|criteo\.net|criteo\.com|amazon-adsystem\.com|rubiconproject\.com|npttech\.com|rackcdn\.com|mc\.yandex\.ru|mc\.yandex\.com|pubmatic\.com)/127.0.0.1/g
+||*$replace=/(?:[A-Za-z0-9-]+\.)*(?:googletagmanager\.com|googletagservices\.com|google-analytics\.com|googlesyndication\.com|dotmetrics\.net|cloudflareinsights\.com|gemius\.pl|tiqcdn\.com|assets\.adobedtm\.com|mrf\.io|upscore\.com|permutive\.app|midas-network\.com|permutive\.com|taboola\.com|googleadservices\.com|linker\.hr|clarity\.ms|criteo\.net|criteo\.com|amazon-adsystem\.com|rubiconproject\.com|npttech\.com|rackcdn\.com|mc\.yandex\.ru|mc\.yandex\.com|pubmatic\.com)/127.0.0.1/g
 !#endif
 
 !#endif
