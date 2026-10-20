@@ -298,7 +298,7 @@
 *##^iframe[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="cdn.amplitude.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="analytcis-browser-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="analytics-browser-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="analytics-browser"][src*="-min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="ampli.v"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="ampli.v"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
