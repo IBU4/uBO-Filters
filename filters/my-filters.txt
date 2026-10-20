@@ -99,7 +99,7 @@
 !@@*$image,domain=browserleaks.com
 !@@*$removeparam,domain=browserleaks.com
 !#endif
-
+!
 ! Google tag manager
 !#if false
 !#else
@@ -127,7 +127,7 @@
 !$replace=/(?:[A-Za-z0-9-]+\.)*googletagmanager\.com/127.0.0.1/g
 !$replace=/(?:[A-Za-z0-9-]+\.)*googletagservices\.com/127.0.0.1/g
 !#endif
-
+!
 ! Google Analytics
 !#if false
 !#else
@@ -140,7 +140,7 @@
 *##^script[src*="google-analytics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*google-analytics\.com/127.0.0.1/g
 !#endif
-
+!
 ! Google Syndication
 !#if false
 !#else
@@ -152,7 +152,7 @@
 *##^script[src*="googlesyndication.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*googlesyndication\.com/127.0.0.1/g
 !#endif
-
+!
 ! Doubleclick.net
 !#if false
 !#else
@@ -168,7 +168,7 @@
 *##^script[src*="gpt.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*doubleclick\.net/127.0.0.1/g
 !#endif
-
+!
 ! Dotmetrics
 !#if false
 !#else
@@ -179,7 +179,7 @@
 *##^script[src*="dotmetrics.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*dotmetrics\.net/127.0.0.1/g
 !#endif
-
+!
 ! Microsoft
 !#if false
 !#else
@@ -190,7 +190,7 @@
 *##^script[src*="clarity.ms"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?clarity\.ms/127.0.0.1/g
 !#endif
-
+!
 ! Cloudflare Insights
 !#if false
 !#else
@@ -201,7 +201,7 @@
 *##^script[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*cloudflareinsights\.com/127.0.0.1/g
 !#endif
-
+!
 ! Meta Pixel
 !#if false
 !#else
@@ -214,7 +214,7 @@
 *,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="connect.facebook.net"][src*="/all.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
-
+!
 ! Chartbeat Diže se zajedno sa loginom, menijem i videom = lomi stranicu
 !#if false
 !#else
@@ -225,7 +225,7 @@
 !*##^script[src*="chartbeat.com"]
 !*$replace=/(?:[A-Za-z0-9-]+\.)*chartbeat\.com/127.0.0.1/g
 !#endif
-
+!
 ! Gemius
 !#if false
 !#else
@@ -236,7 +236,7 @@
 *##^script[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*gemius\.pl/127.0.0.1/g
 !#endif
-
+!
 ! Linker.hr
 !#if false
 !#else
@@ -247,7 +247,7 @@
 *##^noscript:has(iframe[src*="linker.hr"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
-
+!
 ! Tealium iQ
 !#if false
 !#else
@@ -260,7 +260,7 @@
 *##^script[src*="utag.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i])
 !*$replace=/(?:[A-Za-z0-9-]+\.)*tiqcdn\.com/127.0.0.1/g
 !#endif
-
+!
 ! Amazon Advertising / APS
 ! Amazon Ads – early surrogate
 !#if false
@@ -275,7 +275,7 @@
 *##^script[src*="apstag.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*amazon\-adsystem\.com/127.0.0.1/g
 !#endif
-
+!
 ! Adobe DTM / Adobe Launch
 !#if false
 !#else
@@ -289,7 +289,7 @@
 *##^script[src*="launch-"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*assets\.adobedtm\.com/127.0.0.1/g
 !#endif
-
+!
 ! Amplitude
 !#if false
 !#else
@@ -304,7 +304,7 @@
 *##^script[src*="ampli.v"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?cdn\.amplitude\.com/127.0.0.1/g
 !#endif
-
+!
 ! Hotjar
 !#if false
 !#else
@@ -318,7 +318,7 @@
 *##^script[src*="hotjar-"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?hotjar\.com/127.0.0.1/g
 !#endif
-
+!
 ! New Relic
 !#if false
 !#else
@@ -332,7 +332,7 @@
 *##^script[src*="nr-spa-"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?newrelic\.com/127.0.0.1/g
 !#endif
-
+!
 ! Criteo
 !#if false
 !#else
@@ -353,7 +353,7 @@
 *##^noscript:has(iframe[src*="criteo.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?criteo\.net/127.0.0.1/g
 !#endif
-
+!
 ! Marfeel
 !#if false
 !#else
@@ -366,7 +366,7 @@
 *##^script[src*="marfeel-sdk"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*mrf\.io/127.0.0.1/g
 !#endif
-
+!
 ! Midas
 !#if false
 !#else
@@ -378,7 +378,7 @@
 *##^script[src*="midas"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="midas"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
-
+!
 ! 234doo
 !#if false
 !#else
@@ -388,7 +388,7 @@
 *##^noscript:has(iframe[src*="234doo.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="234doo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
-
+!
 ! Cesti nacin pozivanja uz nisku vjerovatnost loma stranice ali vecu vjerovatnost izvrsenja drugim putem, vidi listu iznad za detalje.
 !#if false
 !#else
@@ -503,7 +503,7 @@
 *##^script[src*="onesignal.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="insurads.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
-
+!
 ! Globalni 127.0.0.1 sink
 ! else za omogućiti replace blok
 !#if false
@@ -516,11 +516,7 @@
 !*##^script[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! rename trackers to localhost
 !||*$replace=/(?:[A-Za-z0-9-]+\.)*(?:googletagmanager\.com|googletagservices\.com|google-analytics\.com|googlesyndication\.com|dotmetrics\.net|cloudflareinsights\.com|gemius\.pl|tiqcdn\.com|assets\.adobedtm\.com|mrf\.io|upscore\.com|permutive\.app|midas-network\.com|permutive\.com|taboola\.com|googleadservices\.com|linker\.hr|clarity\.ms|criteo\.net|criteo\.com|amazon-adsystem\.com|rubiconproject\.com|npttech\.com|rackcdn\.com|mc\.yandex\.ru|mc\.yandex\.com|pubmatic\.com)/127.0.0.1/g
-! Nije testirano - browser only
-!*127.0.0.1*$method=post
-!*##+js(prevent-fetch, method:POST body:127.0.0.1)
-!*##+js(trusted-suppress-native-method, XMLHttpRequest.prototype.send, /127\.0\.0\.1/, prevent)
 !#endif
-
+!
 !#endif
 !#endif
