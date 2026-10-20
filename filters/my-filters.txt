@@ -26,65 +26,65 @@
 ||html-load.cc^$script,redirect=noop.js
 *##^script[src*="html-load.cc"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="html-load.cc"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! html-load.com
 ||html-load.com^$script,redirect=noop.js
 *##^script[src*="html-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="html-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! content-loader.com
 ||content-loader.com^$script,redirect=noop.js
 *##^script[src*="content-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="content-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! css-load.com
 ||css-load.com^$script,redirect=noop.js
 *##^script[src*="css-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="css-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! img-load.com
 ||img-load.com^$script,redirect=noop.js
 *##^script[src*="img-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="img-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! fs-loader.com
 ||fs-loader.com^$script,redirect=noop.js
 *##^script[src*="fs-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="fs-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! colourpike.com
 ||colourpike.com^$script,redirect=noop.js
 *##^script[src*="colourpike.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="colourpike.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !Blackthrough
 !pagefair.com
 *##^script[src*="pagefair.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="pagefair.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/pagefair\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/pagefair\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/pagefair\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/pagefair\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !pagefair.net
 *##^script[src*="pagefair.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="pagefair.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/pagefair\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/pagefair\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/pagefair\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/pagefair\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !btloader
 *##^script[src*="btloader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="btloader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/btloader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/btloader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/btloader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/btloader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !blockmetrics.com
 *##^script[src*="blockmetrics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="blockmetrics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/blockmetrics\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/blockmetrics\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/blockmetrics\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/blockmetrics\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 !
 !Anti-Fingerprint - detektira 1p primitivne fingerprint skripte i onemogućuje pokretanje
@@ -131,8 +131,8 @@
 !#else
 *##+js(google-analytics_analytics)
 *##+js(google-analytics_ga)
-*##^script:has-text(/createElement/i):has-text(/google\-analytics\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/google\-analytics\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/google\-analytics\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/google\-analytics\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="google-analytics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="google-analytics.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="google-analytics.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -143,8 +143,8 @@
 !#if false
 !#else
 *##+js(googlesyndication_adsbygoogle)
-*,~googleapis.com##^script:has-text(/createElement/i):has-text(/googlesyndication\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~googleapis.com##^script:has-text(/createElement/i):has-text(/googlesyndication\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~googleapis.com##^head script:has-text(/createElement/i):has-text(/googlesyndication\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~googleapis.com##^head script:has-text(/createElement/i):has-text(/googlesyndication\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="googlesyndication.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="googlesyndication.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="googlesyndication.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -155,8 +155,8 @@
 !#if false
 !#else
 *##+js(doubleclick_instream_ad_status)
-*,~googleapis.com,~onnetwork.tv##^script:has-text(/createElement/i):has-text(/doubleclick\.net/i):has-text(/appendChild/i):not(:has-text(/didomionready/i)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~googleapis.com,~onnetwork.tv##^script:has-text(/createElement/i):has-text(/doubleclick\.net/i):has-text(/insertBefore/i):not(:has-text(/didomionready/i)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~googleapis.com,~onnetwork.tv##^head script:has-text(/createElement/i):has-text(/doubleclick\.net/i):has-text(/appendChild/i):not(:has-text(/didomionready/i)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~googleapis.com,~onnetwork.tv##^head script:has-text(/createElement/i):has-text(/doubleclick\.net/i):has-text(/insertBefore/i):not(:has-text(/didomionready/i)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="doubleclick.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="doubleclick.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *,~direktno.hr##^script[src*="doubleclick.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -170,8 +170,8 @@
 ! Dotmetrics 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="dotmetrics.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="dotmetrics.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="dotmetrics.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -181,8 +181,8 @@
 ! Microsoft 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="clarity.ms"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="clarity.ms"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="clarity.ms"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -192,8 +192,8 @@
 ! Cloudflare Insights 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="cloudflareinsights.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -203,21 +203,21 @@
 ! Meta Pixel
 !#if false
 !#else
-*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/fbevents\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/fbevents\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/fbevents\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/fbevents\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="connect.facebook.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="connect.facebook.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="connect.facebook.net"][src*="/fbevents.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~croatiaairlines.com##^script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="connect.facebook.net"][src*="/all.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 
 ! Chartbeat 1p diže se zajedno sa loginom, menijem i videom = lomi stranicu
 !#if false
 !#else
-!*,~edition.cnn.com,~direktno.hr##^script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/appendChild/i)
-!*,~edition.cnn.com,~direktno.hr##^script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/insertBefore/i)
+!*,~edition.cnn.com,~direktno.hr##^head script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/appendChild/i)
+!*,~edition.cnn.com,~direktno.hr##^head script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/insertBefore/i)
 !*##^iframe[src*="chartbeat.com"]
 *##^noscript:has(iframe[src*="chartbeat.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*##^script[src*="chartbeat.com"]
@@ -227,8 +227,8 @@
 ! Gemius 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="gemius.pl"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -238,8 +238,8 @@
 ! Linker.hr 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?linker\.hr/127.0.0.1/g
 *##^noscript:has(iframe[src*="linker.hr"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -249,8 +249,8 @@
 ! Tealium iQ 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="tags.tiqcdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="tags.tiqcdn.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="tags.tiqcdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -264,8 +264,8 @@
 !#if false
 !#else
 *##+js(amazon_ads)
-*,~imdb.com##^script:has-text(/createElement/i):has-text(/amazon\-adsystem\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~imdb.com##^script:has-text(/createElement/i):has-text(/amazon\-adsystem\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~imdb.com##^head script:has-text(/createElement/i):has-text(/amazon\-adsystem\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~imdb.com##^head script:has-text(/createElement/i):has-text(/amazon\-adsystem\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="amazon-adsystem.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="amazon-adsystem.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="amazon-adsystem.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -277,8 +277,8 @@
 ! Adobe DTM / Adobe Launch 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="assets.adobedtm.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="assets.adobedtm.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="assets.adobedtm.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -291,8 +291,8 @@
 ! Amplitude 1p
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="cdn.amplitude.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -307,8 +307,8 @@
 !#if false
 !#else
 !*##^script:has-text(/hotjar\.com/i)
-*##^script:has-text(/createElement/i):has-text(/hotjar\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/hotjar\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/hotjar\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/hotjar\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="hotjar.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="hotjar.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="hotjar.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -321,8 +321,8 @@
 !#if false
 !#else
 !*##^script:has-text(/newrelic\.com/i)
-*##^script:has-text(/createElement/i):has-text(/newrelic\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/newrelic\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/newrelic\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/newrelic\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="newrelic.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="newrelic.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="newrelic.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -336,16 +336,16 @@
 !#else
 ! criteo.com
 !*##^script:has-text(/criteo\.com/i)
-*##^script:has-text(/createElement/i):has-text(/criteo\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/criteo\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/criteo\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/criteo\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="criteo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="criteo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="criteo.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:www\.)?criteo\.com/127.0.0.1/g
 ! criteo.net
 !*##^script:has-text(/criteo\.net/i)
-*##^script:has-text(/createElement/i):has-text(/criteo\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/criteo\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/criteo\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/criteo\.net/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="criteo.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="criteo.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="criteo.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -355,8 +355,8 @@
 ! Marfeel
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/mrf\.io/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/mrf\.io/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/mrf\.io/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/mrf\.io/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="mrf.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="mrf.io"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="mrf.io"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -368,8 +368,8 @@
 ! Midas
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="midas-network.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="midas-network.com"])
 *##^script[src*="midas-network.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -380,8 +380,8 @@
 ! 234doo
 !#if false
 !#else
-*##^script:has-text(/createElement/i):has-text(/234doo\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script:has-text(/createElement/i):has-text(/234doo\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/234doo\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/createElement/i):has-text(/234doo\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="234doo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="234doo.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="234doo.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -507,8 +507,8 @@
 !#if false
 !!#else
 ! localhost cleaner
-!*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-!*##^script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^head script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+!*##^head script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*##^iframe[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*##^noscript:has(iframe[src*="127.0.0.1"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*##^script[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
