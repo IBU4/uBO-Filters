@@ -1,11 +1,13 @@
 [uBlock Origin]
 ! Title: Osobni globalni filteri
 ! Expires: 1 day
+! Homepage: https://github.com/IBU4/uBO-Filters
 !
 !uBO-Filters
 !Personal uBlock Origin filters for Firefox only.
 !Published for personal synchronization and reference. Not intended for third-party use or public distribution.
 !No support or compatibility guarantees are provided. Use at your own risk.
+!Warning: Experimental filters can be enforced at any time.
 !
 !Globalna sekcija
 !-----------------------------------------
@@ -19,47 +21,47 @@
 !Ad-Shield
 ! Heuristika
 ! Primjer - mora početi sa !function()  izuzima ukoliko počinje sa mogućim funkcionalnim kodom prije. Isto tako mora završiti sa }() radi mogućeg funkcionalnog koda iza.
-*##^script:has-text(/^\s*!function\(\)/):has-text(/\}\(\);\s*$/):has-text(__sa_):has-text(as_essential):has-text(HTMLIFrameElement_contentWindow):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^head script:has-text(/^\s*!function\(\)/):has-text(/\}\(\);\s*$/):has-text(__sa_):has-text(as_essential):has-text(HTMLIFrameElement_contentWindow):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !LAN/localhost injection point primjer za ubacivanje vlastitog JS za veće izmjene.
 !*$script,replace=/html\-load\.cc/127.0.0.1/g
 ! html-load.cc
-||html-load.cc^$script,redirect=noop.js
+!||html-load.cc^$script,redirect=noop.js
 *##^script[src*="html-load.cc"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="html-load.cc"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/html\-load\.cc/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! html-load.com
-||html-load.com^$script,redirect=noop.js
+!||html-load.com^$script,redirect=noop.js
 *##^script[src*="html-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="html-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/html\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! content-loader.com
-||content-loader.com^$script,redirect=noop.js
+!||content-loader.com^$script,redirect=noop.js
 *##^script[src*="content-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="content-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/content\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! css-load.com
-||css-load.com^$script,redirect=noop.js
+!||css-load.com^$script,redirect=noop.js
 *##^script[src*="css-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="css-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/css\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! img-load.com
-||img-load.com^$script,redirect=noop.js
+!||img-load.com^$script,redirect=noop.js
 *##^script[src*="img-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="img-load.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/img\-load\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! fs-loader.com
-||fs-loader.com^$script,redirect=noop.js
+!||fs-loader.com^$script,redirect=noop.js
 *##^script[src*="fs-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="fs-loader.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/fs\-loader\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! colourpike.com
-||colourpike.com^$script,redirect=noop.js
+!||colourpike.com^$script,redirect=noop.js
 *##^script[src*="colourpike.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="colourpike.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/colourpike\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -90,15 +92,15 @@
 !Anti-Fingerprint - detektira 1p primitivne fingerprint skripte i onemogućuje pokretanje
 !#if false
 !#else
-*,~amiunique.org##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~amiunique.org##^head script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *,~js.stripe.com##^script[src*="fingerprint"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! Primjer neutralizacije fingerprinta adblock ekstenzije
-@@||browserleaks.com^$generichide
-@@*$image,domain=browserleaks.com
-@@*$removeparam,domain=browserleaks.com
+!@@||browserleaks.com^$generichide
+!@@*$image,domain=browserleaks.com
+!@@*$removeparam,domain=browserleaks.com
 !#endif
 
-! Google tag manager 1p
+! Google tag manager
 !#if false
 !#else
 !Stape only. izaziva syntax error i prekida pokretanje. Stape je 1p proxy za ad-tech
@@ -126,7 +128,7 @@
 !$replace=/(?:[A-Za-z0-9-]+\.)*googletagservices\.com/127.0.0.1/g
 !#endif
 
-! Google Analytics 1p
+! Google Analytics
 !#if false
 !#else
 *##+js(google-analytics_analytics)
@@ -139,7 +141,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*google-analytics\.com/127.0.0.1/g
 !#endif
 
-! Google Syndication 1p
+! Google Syndication
 !#if false
 !#else
 *##+js(googlesyndication_adsbygoogle)
@@ -151,7 +153,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*googlesyndication\.com/127.0.0.1/g
 !#endif
 
-! Doubleclick.net 1p
+! Doubleclick.net
 !#if false
 !#else
 *##+js(doubleclick_instream_ad_status)
@@ -167,7 +169,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*doubleclick\.net/127.0.0.1/g
 !#endif
 
-! Dotmetrics 1p
+! Dotmetrics
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/dotmetrics\.net/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -178,7 +180,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*dotmetrics\.net/127.0.0.1/g
 !#endif
 
-! Microsoft 1p
+! Microsoft
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/clarity\.ms/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -189,7 +191,7 @@
 !*$replace=/(?:www\.)?clarity\.ms/127.0.0.1/g
 !#endif
 
-! Cloudflare Insights 1p
+! Cloudflare Insights
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -213,7 +215,7 @@
 *##^script[src*="connect.facebook.net"][src*="/all.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 
-! Chartbeat 1p diže se zajedno sa loginom, menijem i videom = lomi stranicu
+! Chartbeat Diže se zajedno sa loginom, menijem i videom = lomi stranicu
 !#if false
 !#else
 !*,~edition.cnn.com,~direktno.hr##^head script:has-text(/createElement/i):has-text(/chartbeat\.com/i):has-text(/appendChild/i)
@@ -224,7 +226,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*chartbeat\.com/127.0.0.1/g
 !#endif
 
-! Gemius 1p
+! Gemius
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/gemius\.pl/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -235,7 +237,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*gemius\.pl/127.0.0.1/g
 !#endif
 
-! Linker.hr 1p
+! Linker.hr
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/linker\.hr/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -246,7 +248,7 @@
 *##^script[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 
-! Tealium iQ 1p
+! Tealium iQ
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/tags\.tiqcdn\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -259,7 +261,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*tiqcdn\.com/127.0.0.1/g
 !#endif
 
-! Amazon Advertising / APS 1p
+! Amazon Advertising / APS
 ! Amazon Ads – early surrogate
 !#if false
 !#else
@@ -274,7 +276,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*amazon\-adsystem\.com/127.0.0.1/g
 !#endif
 
-! Adobe DTM / Adobe Launch 1p
+! Adobe DTM / Adobe Launch
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/assets\.adobedtm\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -288,7 +290,7 @@
 !*$replace=/(?:[A-Za-z0-9-]+\.)*assets\.adobedtm\.com/127.0.0.1/g
 !#endif
 
-! Amplitude 1p
+! Amplitude
 !#if false
 !#else
 *##^head script:has-text(/createElement/i):has-text(/cdn\.amplitude\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -506,7 +508,7 @@
 ! else za omogućiti replace blok
 !#if false
 !!#else
-! localhost cleaner
+! localhost cleaner - stabilnije je bez cleanera
 !*##^head script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*##^head script:has-text(/createElement/i):has-text(/127\.0\.0\.1/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*##^iframe[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -514,6 +516,10 @@
 !*##^script[src*="127.0.0.1"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! rename trackers to localhost
 !||*$replace=/(?:[A-Za-z0-9-]+\.)*(?:googletagmanager\.com|googletagservices\.com|google-analytics\.com|googlesyndication\.com|dotmetrics\.net|cloudflareinsights\.com|gemius\.pl|tiqcdn\.com|assets\.adobedtm\.com|mrf\.io|upscore\.com|permutive\.app|midas-network\.com|permutive\.com|taboola\.com|googleadservices\.com|linker\.hr|clarity\.ms|criteo\.net|criteo\.com|amazon-adsystem\.com|rubiconproject\.com|npttech\.com|rackcdn\.com|mc\.yandex\.ru|mc\.yandex\.com|pubmatic\.com)/127.0.0.1/g
+! Nije testirano - browser only
+!*127.0.0.1*$method=post
+!*##+js(prevent-fetch, method:POST body:127.0.0.1)
+!*##+js(trusted-suppress-native-method, XMLHttpRequest.prototype.send, /127\.0\.0\.1/, prevent)
 !#endif
 
 !#endif
