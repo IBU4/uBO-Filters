@@ -1,6 +1,7 @@
 [uBlock Origin]
 ! Title: Osobni globalni filteri
 ! Expires: 1 day
+!
 !uBO-Filters
 !Personal uBlock Origin filters for Firefox only.
 !Published for personal synchronization and reference. Not intended for third-party use or public distribution.
