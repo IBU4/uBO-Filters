@@ -4,6 +4,7 @@ This filter list is provided strictly AS IS, without any warranty, maintenance c
 
 Personal uBlock Origin filters for Firefox only.
 Published for personal synchronization and reference. Not intended for third-party use or public distribution.
+List is used for experimental filters as well, not only tested ones. That can be enforced at any time.
 
 No support or compatibility guarantees are provided. Use at your own risk.
 
