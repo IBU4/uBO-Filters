@@ -208,8 +208,8 @@
 *##^iframe[src*="connect.facebook.net"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="connect.facebook.net"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="connect.facebook.net"][src*="/fbevents.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/appendChild/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~croatiaairlines.com##^head script:has-text(/createElement/i):has-text(/connect\.facebook\.net/i):has-text(/insertBefore/i):has-text(/all\.js/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="connect.facebook.net"][src*="/all.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 
@@ -255,7 +255,7 @@
 *##^noscript:has(iframe[src*="tags.tiqcdn.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="tags.tiqcdn.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="utag.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="utag.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="utag.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper)):not(script[type*="json" i])
 !*$replace=/(?:[A-Za-z0-9-]+\.)*tiqcdn\.com/127.0.0.1/g
 !#endif
 
@@ -296,7 +296,7 @@
 *##^iframe[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="cdn.amplitude.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="cdn.amplitude.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="analytcs-browser-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="analytcis-browser-"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="analytics-browser"][src*="-min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="ampli.v"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="ampli.v"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -371,7 +371,7 @@
 *##^head script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/midas-network\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="midas-network.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^noscript:has(iframe[src*="midas-network.com"])
+*##^noscript:has(iframe[src*="midas-network.com"]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="midas-network.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="midas"][src$=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="midas"][src*=".min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
