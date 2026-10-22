@@ -92,7 +92,7 @@
 !Anti-Fingerprint - detektira 1p primitivne fingerprint skripte i onemogućuje pokretanje
 !#if false
 !#else
-*,~amiunique.org##^head script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~amiunique.org##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *,~js.stripe.com##^script[src*="fingerprint"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! Primjer neutralizacije fingerprinta adblock ekstenzije
 !@@||browserleaks.com^$generichide
@@ -115,8 +115,8 @@
 *,~croatiaairlines.com##^iframe[src*="googletagmanager.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *,~croatiaairlines.com##^noscript:has(iframe[src*="googletagmanager.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="googletagmanager.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="gtm.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="gtm.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gtm"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gtm"][src*="min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/googletagservices\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/googletagservices\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="googletagservices.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
@@ -234,6 +234,8 @@
 *##^iframe[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="gemius.pl"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="gemius.pl"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gemius"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="gemius"][src*="min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*gemius\.pl/127.0.0.1/g
 !#endif
 !
@@ -246,6 +248,8 @@
 !*$replace=/(?:www\.)?linker\.hr/127.0.0.1/g
 *##^noscript:has(iframe[src*="linker.hr"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="lw"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="lw"][src*="min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 !
 ! Tealium iQ
