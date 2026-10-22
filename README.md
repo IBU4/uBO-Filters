@@ -1,3 +1,8 @@
+<div align="center">
+
+<img src="uBO-Filters.png" alt="Tor Domain Isolator icon" width="200" height="112" />
+</div>
+
 # uBO-Filters
 
 This filter list is provided strictly AS IS, without any warranty, maintenance commitment, or obligation to provide technical support.
