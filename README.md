@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="uBO-Filters.png" alt="Tor Domain Isolator icon" width="200" height="112" />
+<img src="uBO-Filters.png" alt="uBO Filters" width="300" height="168" />
 </div>
 
 # uBO-Filters
