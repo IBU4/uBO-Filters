@@ -248,8 +248,8 @@
 !*$replace=/(?:www\.)?linker\.hr/127.0.0.1/g
 *##^noscript:has(iframe[src*="linker.hr"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="linker.hr"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="lw"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="lw"][src*="min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="/lw.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="/lw.min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !#endif
 !
 ! Tealium iQ
