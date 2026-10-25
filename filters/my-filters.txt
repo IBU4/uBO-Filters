@@ -116,7 +116,7 @@
 *,~croatiaairlines.com##^noscript:has(iframe[src*="googletagmanager.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="googletagmanager.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^script[src*="/gtm"][src*=".js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*##^script[src*="/gtm"][src*="min.js"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*##^script[src*="id=gtm-" i]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/googletagservices\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/googletagservices\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="googletagservices.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
