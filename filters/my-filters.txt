@@ -193,7 +193,7 @@
 !
 ! Cloudflare Insights
 !#if false
-!#else
+!!#else
 *##^head script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/appendChild/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^head script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
