@@ -92,7 +92,7 @@
 !Anti-Fingerprint - detektira 1p primitivne fingerprint skripte i onemogućuje pokretanje
 !#if false
 !#else
-*,~amiunique.org##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~amiunique.org,~fingerprint-lab.pages.dev##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *,~js.stripe.com##^script[src*="fingerprint"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! Primjer neutralizacije fingerprinta adblock ekstenzije
 !@@||browserleaks.com^$generichide
