@@ -92,7 +92,7 @@
 !Anti-Fingerprint - detektira 1p primitivne fingerprint skripte i onemogućuje pokretanje
 !#if false
 !#else
-*,~amiunique.org,~fingerprint-lab.pages.dev##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~amiunique.org,~fingerprint-lab2.pages.dev,~fingerprint-lab.pages.dev##^script:has-text(/canvas/i):has-text(/useragent/i):has-text(/hardwareConcurrency/i):has-text(/devicePixelRatio/i):has-text(/timezone/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *,~js.stripe.com##^script[src*="fingerprint"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 ! Primjer neutralizacije fingerprinta adblock ekstenzije
 !@@||browserleaks.com^$generichide
@@ -198,7 +198,7 @@
 *##^head script:has-text(/createElement/i):has-text(/cloudflareinsights\.com/i):has-text(/insertBefore/i):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^iframe[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 *##^noscript:has(iframe[src*="cloudflareinsights.com"]):not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
-*,~fingerprint-lab.pages.dev##^script[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
+*,~fingerprint-lab2.pages.dev,~fingerprint-lab.pages.dev##^script[src*="cloudflareinsights.com"]:not(script[type*="json" i]):not(:has-text(/schema\.org/i)):not(:has-text(page-wrapper))
 !*$replace=/(?:[A-Za-z0-9-]+\.)*cloudflareinsights\.com/127.0.0.1/g
 !#endif
 !
